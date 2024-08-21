@@ -1,20 +1,24 @@
-l =  list()
+mylist = list()
 
-l.append(0)
 
-l2 = [1,2,3,4]
+# mutable,ordered, contians duplicate.
+mylist.append(5)
+mylist.append(6)
+mylist.append(1)
+mylist.append(1)
 
-#add the l2 list to l1
-l.extend(l2)
-print(l)
+mylist2 = mylist
+#Removes all element from the list 
+#mylist.clear()
+# add the element in the list
+mylist.extend([1,2,3,4])
 
-#insert 
-#first argumnet is the index and second is the value 
-l.insert(4,2)
-print(l)
+mylist.insert(0, 2)
+mylist.pop(4)
 
-#remove
-#Remove the element from the list
-#if it has many element it will remove the first one
-l.remove(2)
-print(l)
+
+print(mylist)
+print(mylist2)
+
+
+
